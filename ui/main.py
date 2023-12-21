@@ -19,7 +19,7 @@ roop.globals.use_batch = None
 
 
 def prepare_environment():
-    roop.globals.output_path = os.path.abspath(os.path.join(os.getcwd(), "output"))
+    roop.globals.output_path = os.path.abspath(os.path.join(os.getcwd(), "../drive/MyDrive/colab/out/"))
     os.makedirs(roop.globals.output_path, exist_ok=True)
     if not roop.globals.CFG.use_os_temp_folder:
         os.environ["TEMP"] = os.environ["TMP"] = os.path.abspath(os.path.join(os.getcwd(), "temp"))
